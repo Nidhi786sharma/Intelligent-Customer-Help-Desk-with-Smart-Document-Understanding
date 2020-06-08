@@ -43,7 +43,7 @@ Create the following services:
 
 #### Import the document
 
-Launch the `Watson Discovery` tool and create a new data collection by selecting the `Upload your own data` option. Give the data collection a unique name. When prompted, select and upload the `watsonexplorerinstall` file located in the `data` directory of your local repo.
+Launch the `Watson Discovery` tool and create a new data collection by selecting the `Upload your own data` option. Give the data collection a unique name. When prompted, select and upload the `watsonexplorerinstall` file located in the local repo.
 Before applying SDU to our document, lets do some simple queries on the data so that we can compare it to results found after applying SDU. Click the `Build your own query`  button. Enter queries related to your Bot.
 
 
