@@ -8,4 +8,4 @@
 
 2. How to [create cloud function](Cf.md) using IBM cloud.
 
-3. How to [connect Watson discovery](discovercf.md) to chatbot through Cloud funtcion.
+3. How to [connect Watson discovery](Discovery.md) to chatbot through Cloud funtcion.
