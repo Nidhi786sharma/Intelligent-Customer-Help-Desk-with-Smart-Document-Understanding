@@ -36,7 +36,7 @@ Create the following services:
 #### Import the document
 
 Launch the `Watson Discovery` tool and create a new data collection by selecting the `Upload your own data` option. Give the data collection a unique name. When prompted, select and upload the `watsonexplorerinstall` file located in the `data` directory of your local repo.
-Before applying SDU to our document, lets do some simple queries on the data so that we can compare it to results found after applying SDU. Click the `Build your own query` [1] button. Enter queries related to your Bot.
+Before applying SDU to our document, lets do some simple queries on the data so that we can compare it to results found after applying SDU. Click the `Build your own query`  button. Enter queries related to your Bot.
 
 
 #### Annotate with SDU
@@ -58,9 +58,9 @@ For this specific owner's manual, at a minimum, it is suggested to mark the foll
 * All other text should be marked as `text`.
 
 
-Once you click the `Apply changes to collection` button [6], you will be asked to reload the document. Choose the same owner's manual `.pdf` document as before.
+Once you click the `Apply changes to collection` button , you will be asked to reload the document. Choose the same owner's manual `.pdf` document as before.
 
-Next, click on the `Manage fields` [1] tab.
+Next, click on the `Manage fields`  tab.
 
 Once again, you will be asked to reload the document.
 
@@ -78,15 +78,15 @@ Return to the query panel (click `Build your own query`) and see how much better
 
 In upcoming steps, you will need to provide the credentials to access your Discovery collection. The values can be found in the following locations.
 
-The `Collection ID` and `Environment ID` values can be found by clicking the dropdown button [1] located at the top right side of your collection panel:
+The `Collection ID` and `Environment ID` values can be found by clicking the dropdown button located at the top right side of your collection panel:
 
 
 ![alt output](http://i.xp.io/siUYYP3.jpg)
 
 
-For credentials, return to the main panel of your Discovery service, and click the `Service credentials` [1] tab:
+For credentials, return to the main panel of your Discovery service, and click the `Service credentials` tab:
 
-Click the `View credentials` [2] drop-down menu to view the IAM `apikey` [3] and `URL` endpoint [4] for your service.
+Click the `View credentials`  drop-down menu to view the IAM `apikey`  and `URL` endpoint for your service.
 
 
 ![alt output](http://i.xp.io/siY3t7o.jpg)
@@ -98,20 +98,20 @@ Click the `View credentials` [2] drop-down menu to view the IAM `apikey` [3] and
 
 Now let's create the `web action` that will make queries against our Discovery collection.
 
-* Start the `IBM Cloud Functions` service by selecting `Create Resource` from the IBM Cloud dashboard. Enter `functions` as the filter [1], then select the `Functions` card [2]:
+* Start the `IBM Cloud Functions` service by selecting `Create Resource` from the IBM Cloud dashboard. Enter `functions` as the filter , then select the `Functions` card :
 
 ![alt output](http://i.xp.io/sj8o7ku.png)
 
-* From the `Functions` main panel, click on the `Actions` tab. Then click on `Create`. From the `Create` panel, select the `Create Action` option. On the `Create Action` panel, provide a unique `Action Name` [1], keep the default package [2], and select the `Node.js 10` [3] runtime. Click the `Create` button [4] to create the action. 
- Once your action is created, click on the `Code` tab [1]:
+* From the `Functions` main panel, click on the `Actions` tab. Then click on `Create`. From the `Create` panel, select the `Create Action` option. On the `Create Action` panel, provide a unique `Action Name` , keep the default package , and select the `Node.js 10`   runtime. Click the `Create` button  to create the action. 
+ Once your action is created, click on the `Code` tab :
 
 ![alt output](http://i.xp.io/sjhwN44.png)
 
-* In the code editor window [2], cut and paste in the code from the `disco-action.js` file found in the `actions` directory of your local repo. The code is pretty straight-forward - it simply connects to the Discovery service, makes a query against the collection, then returns the response.
+* In the code editor window , cut and paste in the code from the `disco-action.js` file found in the `actions` directory of your local repo. The code is pretty straight-forward - it simply connects to the Discovery service, makes a query against the collection, then returns the response.
 
-* If you press the `Invoke` button [3], it will fail due to credentials not being defined yet. We'll do this next.
+* If you press the `Invoke` button , it will fail due to credentials not being defined yet. We'll do this next.
 
- * Select the `Parameters` tab [1]
+ * Select the `Parameters` tab 
 
 Add the following keys:
 
@@ -130,12 +130,12 @@ Now that the credentials are set, return to the `Code` panel and press the `Invo
 
 ![alt output](http://i.xp.io/sohoj7X.png)
 
-Next, go to the `Endpoints` panel [1]:
+Next, go to the `Endpoints` panel :
 
 ![alt output](http://i.xp.io/sokV7jI.png)
 
 
-Click the checkbox for `Enable as Web Action` [2]. This will generate a public endpoint URL [3].
+Click the checkbox for `Enable as Web Action` . This will generate a public endpoint URL .
 
 
 ### 5. Configure Watson Assistant
@@ -161,7 +161,7 @@ From the `Restaurant Bot Skill` panel, select the `Intents` tab. Click the `Crea
 
 #### Create new dialog node
 
-Now we need to add a node to handle our intent. Click on the `Dialog` [1] tab, then click on the drop down menu for the `Small Talk` node [2], and select the `Add node below` [3] option.
+Now we need to add a node to handle our intent. Click on the `Dialog`  tab, then click on the drop down menu for the `Small Talk` node , and select the `Add node below`  option.
 
 ![alt output](http://i.xp.io/stKz68R.png)
 
