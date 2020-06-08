@@ -7,3 +7,5 @@
 1. How to [create a skill](skill.md) using Watson Assistant.
 
 2. How to [create cloud function](Cf.md) using IBM cloud.
+
+3. How to [connect Watson discovery](discoverchatbot.md) to chatbot through Cloud funtcion.
