@@ -13,6 +13,14 @@ Current document type support for SDU is based on your plan:
 * Lite plans: PDF, Word, PowerPoint, Excel, JSON, HTML
 * Advanced plans: PDF, Word, PowerPoint, Excel, PNG, TIFF, JPG, JSON, HTML
 
+## What is a webhook?
+
+A webhook is a mechanism that allows you to call out to an external program based on something happening in your program. When used in a Watson Assistant dialog skill, a webhook is triggered when the Assistant processes a node that has a webhook enabled. The webhook collects data that you specify or that you collect from the user during the conversation and save in context variables, and sends the data to the Webhook request URL as an HTTP POST request. The URL that receives the webhook is the listener. It performs a predefined action using the information that is provided by the webhook as specified in the webhook definition, and can optionally return a response.
+
+In our example, the webhook will communicate with an IBM Cloud Functions `web action`, which is connected to the Watson Discovery service.
+
+
+
 # Steps:
 
 1. [Create IBM Cloud services](#1-create-ibm-cloud-services)
@@ -94,7 +102,7 @@ Click the `View credentials`  drop-down menu to view the IAM `apikey`  and `URL`
 
 
 
-### 4. Create IBM Cloud Functions action
+### 3. Create IBM Cloud Functions action
 
 Now let's create the `web action` that will make queries against our Discovery collection.
 
@@ -138,7 +146,7 @@ Next, go to the `Endpoints` panel :
 Click the checkbox for `Enable as Web Action` . This will generate a public endpoint URL .
 
 
-### 5. Configure Watson Assistant
+### 4. Configure Watson Assistant
 
  Launch the `Watson Assistant` tool and create a new dialog skill. Select the `Use sample skill` option as your starting point.
 
@@ -168,15 +176,6 @@ Now we need to add a node to handle our intent. Click on the `Dialog`  tab, then
 The dialog node should have a `Return variable` [1] set automatically to `$webhook_result_1`. This is the variable name you can use to access the result from the Discovery service query.
 
 ![alt output](http://i.xp.io/stU3o2U.png)
-
-
-
-
-
-
-
-
-
 
 
 
