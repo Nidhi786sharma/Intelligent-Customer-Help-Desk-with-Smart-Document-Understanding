@@ -9,6 +9,8 @@
          We will use the IBM cloud function that allows watson assistant to post queries to watson discovery.
 
          The goal is to set up a remote connection between the customer and the company. 
+         
+        
         
    *By this chatbot anyone can have their problem solved by posting queries to chatbot via being at home or without calling an employee.*
    
@@ -52,6 +54,18 @@
     The model created i.e. a chatbot would be able to identify any operational question posted by the user
     and using IBM Watson discovery will redirect the user to the  section of the owner's manual
     where the answer to the question lies.
+    
+    
+  ## Flow
+
+![architecture](http://i.xp.io/tWSpUFl.png)
+
+    
+    
+    
+    
+    
+    
 
 ## What will you get to know here?
 
@@ -66,5 +80,20 @@
 
 
 4. How to [connect Watson discovery](Discovery.md) to chatbot through Cloud funtcion.
+
+
+
+
+
+
+
+
+
+# License
+
+This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+
+
+[Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
 
 
