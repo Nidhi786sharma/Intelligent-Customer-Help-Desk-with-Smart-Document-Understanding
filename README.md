@@ -49,9 +49,11 @@
 
 *Project Deliverables:*
 
-The model created i.e. a chatbot would be able to identify any operational question posted by the user and using IBM Watson discovery will redirect the user to the  section of the owner's manual where the answer to the question lies.
+    The model created i.e. a chatbot would be able to identify any operational question posted by the user
+    and using IBM Watson discovery will redirect the user to the  section of the owner's manual
+    where the answer to the question lies.
 
-## What you get to know here?
+## What will you get to know here?
 
 
 1. How to [create a skill](skill.md) using Watson Assistant.
