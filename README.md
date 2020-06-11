@@ -1,6 +1,8 @@
-# llSPS-INT-1858-Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding
-
-## Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding
+ # Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding
+ 
+ [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding/graphs/commit-activity) [![GitHub fork](https://img.shields.io/github/forks/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding?style=social)](https://github.com/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding) [![GitHub issues](https://img.shields.io/github/issues/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding)](https://github.com/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding/issues) [![GitHub stars](https://img.shields.io/github/stars/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding?style=social)](https://github.com/Nidhi786sharma/Intelligent-Customer-Help-Desk-with-Smart-Document-Understanding/stargazers) 
+ 
+ 
 
  In this project a chatbot is created which offers a complete and easy way to answer different sets of questions asked by the customers. With the help of Watson discovery channel it can also answer some typical questions about the operation of a device because we have feeds the owners manual to the watson discovery channel. The benefits of this kind of chatbot is that it is superior than the typical chatbot which can answers simple questions like store location and hours. The chatbot is upgraded with the help of watson discovery collection which is build using smart document understanding.
 
